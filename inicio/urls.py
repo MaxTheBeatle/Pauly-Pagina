@@ -1,7 +1,6 @@
-from django.urls import path, include
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.inicio_view, name='inicio'),
-    path('', include('paulina.urls')), 
+    path('', views.inicio_view, name='inicio'),  # Solo esta ruta
 ]
